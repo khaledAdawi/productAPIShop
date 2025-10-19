@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products By Category</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container">
+      <img src="./assets/img/logo.jpeg" width="60px" class="me-5" alt="shop Logo">
+      <a class="navbar-brand" href="index.html">You&Me</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="creat.html">Create Product</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="delete.html">Delete Product</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header
+      class="d-flex justify-content-center align-items-center text-black"
+      style="
+        background: url('assets/img/products.jpg') no-repeat;
+        background-position: 20% center;
+        background-size: cover;
+        min-height: 300px;
+      "
+    >
+      <h1 class="custom-heading fw-semibold header-text"></h1>
+    </header>
+
+    <!-- Featured Products -->
+    <section class="featured-products text-center">
+      <div class="container">
+        <div class="products-loader"></div>
+        <div class="error"></div>
+
+        <div class="row g-4 products-container"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>About MyMart</h5>
+            <p>
+              MyMart is your go-to destination for natural beauty, elegant
+              fragrances, and stylish home décor — all in one place.
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="products.html" class="footer-link">Products</a></li>
+              <li>
+                <a href="creat.html" class="footer-link">Create Product</a>
+              </li>
+              <li>
+                <a href="delete.html" class="footer-link">Delete Product</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5>Contact Us</h5>
+            <p><i class="bi bi-envelope-fill me-2"></i> support@mymart.com</p>
+            <div class="social-icons mt-3">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="text-light opacity-25" />
+        <div class="text-center text-light small">
+          © 2025 MyMart. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="assets/js/productsByCategory.js"></script>
+  </body>
+</html>
